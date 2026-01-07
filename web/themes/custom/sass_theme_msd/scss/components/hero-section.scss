@@ -1,0 +1,19 @@
+.testing {
+    @extend .container;
+    background: radial-gradient(101.28% 101.28% at 50% 50%, #FFF8EA 0%, #7F6630 100%);
+    padding-block: 50px;
+
+    img {
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+    }
+
+    p {
+        padding-top: $space-20;
+
+        a {
+            @extend .primary;
+        }
+    }
+}

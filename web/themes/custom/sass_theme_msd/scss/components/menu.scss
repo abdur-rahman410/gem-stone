@@ -1,0 +1,97 @@
+.logo-with-menu {
+    background-color: $primary;
+
+    .region--header-top {
+        @extend .container;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        #block-sass-theme-msd-site-branding {
+            a {
+                img {
+                    padding-block: $space-6;
+                }
+            }
+        }
+
+        #block-sass-theme-msd-mainnavigation {
+            width: 50%;
+
+            @include tablet {
+                width: 100%;
+            }
+
+
+            .sf-menu {
+                >li {
+                    padding: $space-10 $space-12 !important;
+
+                    @include tablet {
+                        padding: 0 $space-45 !important;
+                    }
+
+                    >a {
+                        text-decoration: none;
+                        @extend .h6;
+                        padding: 0 !important;
+                        color: $white;
+
+                        .sf-sub-indicator {
+                            right: unset !important;
+                            left: 3em !important;
+
+                            &::after {
+                                content: url(../icons/Vector.svg) !important;
+                            }
+                        }
+                    }
+
+                    ul {
+                        background: rgba(107, 84, 35, 0.50);
+                        backdrop-filter: blur(10px);
+                        width: 14em !important;
+                        padding: $space-12 !important;
+                        margin-top: $space-10;
+
+                        li {
+                            padding-block: $space-8 !important;
+
+                            a {
+                                text-decoration: none;
+                                @extend .h6;
+                                color: $white;
+                                padding: 0 !important;
+                            }
+                        }
+                    }
+
+                }
+
+                @include tablet {
+                    li.sf-last {
+                        padding-right: 0 !important;
+                    }
+
+                    li.sf-first {
+                        padding-left: 0 !important;
+                    }
+                }
+            }
+
+            .sf-accordion-toggle {
+                display: flex;
+                justify-content: end;
+
+                a {
+                    text-decoration: none;
+
+                    span {
+                        color: $white;
+                        font-size: $space-45;
+                    }
+                }
+            }
+        }
+    }
+}
