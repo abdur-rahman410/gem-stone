@@ -1,3 +1,7 @@
+
+.ddev/
+*.sql
+*.sql.gz
 .DS_Store
 /vendor/
 /web/core/
