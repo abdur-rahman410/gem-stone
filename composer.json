@@ -26,7 +26,8 @@
         "drupal/pathauto": "^1.14",
         "drupal/social_media_links": "^2.10",
         "drupal/superfish": "^1.13",
-        "drupal/webform": "^6.3@beta"
+        "drupal/webform": "^6.3@beta",
+        "drush/drush": "^13.7"
     },
     "conflict": {
         "drupal/drupal": "*"
