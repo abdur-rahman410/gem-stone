@@ -120,20 +120,19 @@
 				{% endif %}
 			</div>
 		</div>
-
 		<footer class="site-footer">
 			{% if page.footer_first or page.footer_second or page.footer_third or page.footer_fourth %}
 			<div class="footer-main-wrapper">
 				{{ page.footer_first }}
 				{{ page.footer_second }}
 				{{ page.footer_third }}
-			</div>
-			<div class="date-with-logo">
 				{{ page.footer_fourth }}
-				{{ page.footer_fifth }}
 			</div>
 			{% endif %}
-
 		</footer>
+		<div class="copy-right">
+			<div class="line"></div>
+			{{ page.footer_fifth }}
+		</div>
 	</div>
 </div>

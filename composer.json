@@ -16,23 +16,27 @@
     ],
     "require": {
         "composer/installers": "^2.3",
+        "cweagans/composer-patches": "*",
         "drupal/admin_toolbar": "^3.6",
         "drupal/block_field": "^1.0@RC",
         "drupal/core-composer-scaffold": "^11.3",
         "drupal/core-project-message": "^11.3",
         "drupal/core-recipe-unpack": "^11.3",
         "drupal/core-recommended": "^11.3",
+        "drupal/fontawesome": "^3.0",
         "drupal/paragraphs": "^1.20",
         "drupal/pathauto": "^1.14",
+        "drupal/quick_node_clone": "^1.22",
         "drupal/social_media_links": "^2.10",
         "drupal/superfish": "^1.13",
+        "drupal/svg_image": "^3.2",
         "drupal/webform": "^6.3@beta",
         "drush/drush": "^13.7"
     },
     "conflict": {
         "drupal/drupal": "*"
     },
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "prefer-stable": true,
     "config": {
         "allow-plugins": {
@@ -43,11 +47,17 @@
             "phpstan/extension-installer": true,
             "dealerdirect/phpcodesniffer-composer-installer": true,
             "php-http/discovery": true,
-            "php-tuf/composer-integration": true
+            "php-tuf/composer-integration": true,
+            "cweagans/composer-patches": true
         },
         "sort-packages": true
     },
     "extra": {
+        "patches": {
+            "drupal/fontawesome": {
+                "Fontawesome CKEditor5 compatibility": "https://www.drupal.org/files/issues/2025-02-12/fontawesome-cke5-compatibility-3274028-58.patch"
+            }
+        },
         "drupal-scaffold": {
             "locations": {
                 "web-root": "web/"

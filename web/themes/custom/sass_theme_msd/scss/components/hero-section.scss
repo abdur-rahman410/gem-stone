@@ -1,19 +1,309 @@
-.testing {
-    @extend .container;
-    background: radial-gradient(101.28% 101.28% at 50% 50%, #FFF8EA 0%, #7F6630 100%);
-    padding-block: 50px;
+.style_1 {
+    .hero-section-wrapper {
+        background: radial-gradient(101.28% 101.28% at 50% 50%, #FFF8EA 0%, #7F6630 100%);
+        padding-top: 8rem;
 
-    img {
-        width: 100%;
-        height: 500px;
-        object-fit: cover;
+        @include tablet {
+            padding-top: 0;
+        }
+
+        .hero-section {
+            @extend .container;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: column;
+
+            @include tablet {
+                flex-direction: row;
+                height: 687px;
+
+            }
+
+            .hero-body {
+                h1 {
+                    padding-bottom: $space-30;
+
+                    span {
+                        color: $white;
+                    }
+                }
+
+                .button-wrapper {
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    gap: $space-20;
+
+                    @include tablet {
+                        flex-direction: row;
+                    }
+
+
+                    .explore-btn {
+                        width: 100%;
+
+                        @include tablet {
+                            width: unset;
+                        }
+
+                        a {
+                            @extend .primary;
+                            width: 100%;
+                            display: block;
+                            text-align: center;
+
+                            @include tablet {
+                                width: unset;
+                            }
+                        }
+                    }
+
+                    .whatsapp-btn {
+                        width: 100%;
+
+                        @include tablet {
+                            width: unset;
+                        }
+
+                        a {
+                            @extend .primary;
+                            width: 100%;
+                            display: block;
+                            text-align: center;
+
+                            @include tablet {
+                                width: unset;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .hero-image {}
+        }
+    }
+}
+
+.organic-main-wrapper {
+    @extend .container;
+    padding-block: $space-70;
+
+    @include tablet {
+        padding-block: $space-100;
     }
 
-    p {
-        padding-top: $space-20;
+    @include desktop {
+        padding-block: $space-110;
+    }
 
-        a {
-            @extend .primary;
+    .organic-heading {
+        text-align: center;
+        @extend .h2;
+    }
+
+    .organic-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: $space-35;
+        flex-direction: column;
+
+        @include tablet {
+            flex-direction: row;
+            padding-top: $space-60;
+        }
+
+        .organic-image {
+            text-align: center;
+
+            img {
+                height: 135px;
+            }
+        }
+
+        .organic-name {
+            @extend .h5;
+        }
+    }
+
+}
+
+.profile-view {
+    header {
+        @extend .container;
+        color: $dark-gray;
+        text-align: center;
+        padding-bottom: $space-60;
+
+        h2 {
+            padding-bottom: $space-12;
+        }
+
+        p {
+            @extend .body2;
+        }
+    }
+
+    .profile-main-wrapper {
+        padding-inline: $space-10;
+
+        .profile-info {
+            border-radius: 5px;
+            background: var(--color-3, #EBE4D7);
+            padding: $space-12;
+
+            .image-with-name {
+                display: flex;
+                align-items: center;
+                gap: $space-8;
+                padding-bottom: $space-8;
+
+                .profile-image {
+                    img {
+                        width: 40px;
+                        height: 40px;
+                        object-fit: cover;
+                        border-radius: 50%;
+                    }
+                }
+
+                .profile-name {
+                    @extend .body1;
+                }
+            }
+
+            .profile-description {
+                @extend .body2;
+            }
+        }
+    }
+
+    .slick-dots {
+        @extend.container;
+        bottom: -40px !important;
+        left: 0;
+        right: 0;
+
+        li {
+            background-color: $tertiary !important;
+            border-radius: 15px;
+            width: 15px;
+            height: 15px;
+
+            button {
+                &::before {
+                    font-size: 30px;
+                    color: unset !important;
+                }
+            }
+        }
+
+        li.slick-active {
+            background-color: $primary !important;
+            border-radius: 15px;
+
+        }
+    }
+}
+
+.style_2 {
+    position: relative;
+
+    .hero-image {
+        img {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+
+            @include tablet {
+                height: 330px;
+            }
+
+            @include desktop {
+                height: 388px;
+            }
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            height: 280px;
+            background: linear-gradient(90deg, rgba(107, 84, 35, 0.80) 14.56%, rgba(255, 248, 234, 0.80) 100%);
+
+            @include tablet {
+                height: 330px;
+            }
+
+            @include desktop {
+                height: 388px;
+            }
+        }
+    }
+
+    .hero-section-wrapper {
+        .hero-section {
+            @extend .container;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            padding-block: $space-30;
+
+            @include tablet {
+                padding-block: $space-35;
+            }
+
+            @include desktop {
+                padding-block: $space-68;
+            }
+
+            .hero-body {
+                width: 100%;
+
+                @include tablet {
+                    width: 60%;
+                }
+
+                @include desktop {
+                    width: 50%;
+                }
+
+                h3 {
+                    color: $white;
+                }
+
+                p {
+                    @extend .body1;
+                    color: $white;
+                    padding-block: $space-8 $space-12;
+                }
+
+                .button-wrapper {
+                    display: flex;
+
+                    .explore-btn {
+                        width: 100%;
+
+                        @include tablet {
+                            width: unset;
+                        }
+
+                        a {
+                            @extend .primary;
+                            width: 100%;
+                            display: block;
+                            text-align: center;
+
+                            @include tablet {
+                                width: unset;
+                            }
+                        }
+                    }
+                }
+            }
+
         }
     }
 }

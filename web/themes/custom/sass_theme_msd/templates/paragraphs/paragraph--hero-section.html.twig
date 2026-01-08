@@ -1,0 +1,84 @@
+{#
+/**
+* @file
+* Paragraph template with style-based structure
+*/
+#}
+
+{% set style = paragraph.field_styles.value %}
+
+{% set classes = [
+'paragraph',
+'paragraph--type--' ~ paragraph.bundle|clean_class,
+view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+not paragraph.isPublished() ? 'paragraph--unpublished',
+style
+] %}
+
+{% block paragraph %}
+<div{{ attributes.addClass(classes) }}>
+
+  {# ================= STYLE 1 ================= #}
+  {% if style == 'style_1' %}
+  <div class="style_1">
+    <div class="hero-section-wrapper">
+      <div class="hero-section">
+        <div class="hero-body">
+          {{ content.field_banner_heading }}
+
+          <div class="button-wrapper">
+            <div class="explore-btn">
+              {{ content.field_hero_button }}
+            </div>
+            <div class="whatsapp-btn">
+              {{ content.field_link_to_whatsapp }}
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-image">
+          {{ content.field_hero_image }}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {# ================= STYLE 2 ================= #}
+  {% elseif style == 'style_2' %}
+  <div class="style_2">
+    <div class="hero-image">
+      {{ content.field_hero_image }}
+    </div>
+    <div class="hero-section-wrapper">
+      <div class="hero-section">
+        <div class="hero-body">
+          {{ content.field_banner_heading }}
+          <div class="button-wrapper">
+            <div class="explore-btn">
+              {{ content.field_hero_button }}
+            </div>
+            <div class="whatsapp-btn">
+              {{ content.field_link_to_whatsapp }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {# ================= DEFAULT ================= #}
+  {% else %}
+  <div class="hero-section-wrapper">
+    <div class="hero-section">
+      <div class="hero-body">
+        {{ content.field_banner_heading }}
+      </div>
+      <div class="hero-image">
+        {{ content.field_hero_image }}
+      </div>
+    </div>
+  </div>
+  {% endif %}
+
+  </div>
+  {% endblock %}
