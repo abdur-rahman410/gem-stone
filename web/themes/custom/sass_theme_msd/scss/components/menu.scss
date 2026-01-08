@@ -1,5 +1,10 @@
 .logo-with-menu {
     background-color: $primary;
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    top: 12%;
+    // top: $space-20;
 
     .region--header-top {
         @extend .container;
@@ -16,14 +21,26 @@
         }
 
         #block-sass-theme-msd-mainnavigation {
-            width: 50%;
+            width: 60%;
+
 
             @include tablet {
-                width: 100%;
+                width: auto;
             }
 
-
             .sf-menu {
+                position: absolute;
+                background: rgba(107, 84, 35, 0.50);
+                backdrop-filter: blur(10px);
+                margin-top: $space-12;
+
+                @include tablet {
+                    position: relative;
+                    background-color: transparent !important;
+                    backdrop-filter: unset !important;
+                    margin-top: unset !important;
+                }
+
                 >li {
                     padding: $space-10 $space-12 !important;
 
@@ -48,11 +65,17 @@
                     }
 
                     ul {
-                        background: rgba(107, 84, 35, 0.50);
-                        backdrop-filter: blur(10px);
-                        width: 14em !important;
-                        padding: $space-12 !important;
-                        margin-top: $space-10;
+                        padding: 0 !important;
+                        margin-top: $space-20;
+
+                        @include tablet {
+                            background: rgba(107, 84, 35, 0.50);
+                            backdrop-filter: blur(10px);
+                            width: 14em !important;
+                            padding: $space-12 !important;
+                            margin-top: $space-10;
+                        }
+
 
                         li {
                             padding-block: $space-8 !important;
