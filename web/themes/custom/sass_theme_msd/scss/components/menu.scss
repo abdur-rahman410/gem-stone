@@ -1,117 +1,120 @@
-.logo-with-menu {
-    background-color: $primary;
-    position: absolute;
-    z-index: 2;
-    width: 100%;
-    top: 12%;
-    // top: $space-20;
+.front-page,
+#page {
+    .logo-with-menu {
+        background-color: $primary;
+        position: absolute;
+        z-index: 2;
+        width: 100%;
+        top: 12%;
+        // top: $space-20;
 
-    .region--header-top {
-        @extend .container;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        .region--header-top {
+            @extend .container;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
 
-        #block-sass-theme-msd-site-branding {
-            a {
-                img {
-                    padding-block: $space-6;
+            #block-sass-theme-msd-site-branding {
+                a {
+                    img {
+                        padding-block: $space-6;
+                    }
                 }
             }
-        }
 
-        #block-sass-theme-msd-mainnavigation {
-            width: 60%;
+            #block-sass-theme-msd-mainnavigation {
+                width: 60%;
 
-
-            @include tablet {
-                width: auto;
-            }
-
-            .sf-menu {
-                position: absolute;
-                background: rgba(107, 84, 35, 0.50);
-                backdrop-filter: blur(10px);
-                margin-top: $space-12;
 
                 @include tablet {
-                    position: relative;
-                    background-color: transparent !important;
-                    backdrop-filter: unset !important;
-                    margin-top: unset !important;
+                    width: auto;
                 }
 
-                >li {
-                    padding: $space-10 $space-12 !important;
+                .sf-menu {
+                    position: absolute;
+                    background: rgba(107, 84, 35, 0.50);
+                    backdrop-filter: blur(10px);
+                    margin-top: $space-12;
 
                     @include tablet {
-                        padding: 0 $space-45 !important;
+                        position: relative;
+                        background-color: transparent !important;
+                        backdrop-filter: unset !important;
+                        margin-top: unset !important;
                     }
 
-                    >a {
-                        text-decoration: none;
-                        @extend .h6;
-                        padding: 0 !important;
-                        color: $white;
-
-                        .sf-sub-indicator {
-                            right: unset !important;
-                            left: 3em !important;
-
-                            &::after {
-                                content: url(../icons/Vector.svg) !important;
-                            }
-                        }
-                    }
-
-                    ul {
-                        padding: 0 !important;
-                        margin-top: $space-20;
+                    >li {
+                        padding: $space-10 $space-12 !important;
 
                         @include tablet {
-                            background: rgba(107, 84, 35, 0.50);
-                            backdrop-filter: blur(10px);
-                            width: 14em !important;
-                            padding: $space-12 !important;
-                            margin-top: $space-10;
+                            padding: 0 $space-45 !important;
                         }
 
+                        >a {
+                            text-decoration: none;
+                            @extend .h6;
+                            padding: 0 !important;
+                            color: $white;
 
-                        li {
-                            padding-block: $space-8 !important;
+                            .sf-sub-indicator {
+                                right: unset !important;
+                                left: 3em !important;
 
-                            a {
-                                text-decoration: none;
-                                @extend .h6;
-                                color: $white;
-                                padding: 0 !important;
+                                &::after {
+                                    content: url(../icons/Vector.svg) !important;
+                                }
                             }
                         }
+
+                        ul {
+                            padding: 0 !important;
+                            margin-top: $space-20;
+
+                            @include tablet {
+                                background: rgba(107, 84, 35, 0.50);
+                                backdrop-filter: blur(10px);
+                                width: 14em !important;
+                                padding: $space-12 !important;
+                                margin-top: $space-10;
+                            }
+
+
+                            li {
+                                padding-block: $space-8 !important;
+
+                                a {
+                                    text-decoration: none;
+                                    @extend .h6;
+                                    color: $white;
+                                    padding: 0 !important;
+                                }
+                            }
+                        }
+
                     }
 
+                    @include tablet {
+                        li.sf-last {
+                            padding-right: 0 !important;
+                        }
+
+                        li.sf-first {
+                            padding-left: 0 !important;
+                        }
+                    }
                 }
 
-                @include tablet {
-                    li.sf-last {
-                        padding-right: 0 !important;
-                    }
+                .sf-accordion-toggle {
+                    display: flex;
+                    justify-content: end;
 
-                    li.sf-first {
-                        padding-left: 0 !important;
-                    }
-                }
-            }
+                    a {
+                        text-decoration: none;
 
-            .sf-accordion-toggle {
-                display: flex;
-                justify-content: end;
-
-                a {
-                    text-decoration: none;
-
-                    span {
-                        color: $white;
-                        font-size: $space-45;
+                        span {
+                            color: $white;
+                            font-size: $space-45;
+                        }
                     }
                 }
             }
