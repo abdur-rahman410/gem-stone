@@ -1,0 +1,37 @@
+uuid: 3f518208-afe5-41e7-a8fe-21e2d1cc166b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_ref_para
+    - paragraphs.paragraphs_type.natural_organic
+    - paragraphs.paragraphs_type.natural_organic_wrapper
+  module:
+    - entity_reference_revisions
+id: paragraph.natural_organic_wrapper.field_ref_para
+field_name: field_ref_para
+entity_type: paragraph
+bundle: natural_organic_wrapper
+label: 'Ref Para'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      natural_organic: natural_organic
+    negate: 0
+    target_bundles_drag_drop:
+      hero_section:
+        weight: 4
+        enabled: false
+      natural_organic:
+        weight: 5
+        enabled: true
+      natural_organic_wrapper:
+        weight: 6
+        enabled: false
+field_type: entity_reference_revisions

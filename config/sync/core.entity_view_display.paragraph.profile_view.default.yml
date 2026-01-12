@@ -1,0 +1,22 @@
+uuid: daf45d35-fd85-400b-ac27-8112f6204875
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.profile_view.field_profile_view
+    - paragraphs.paragraphs_type.profile_view
+  module:
+    - block_field
+id: paragraph.profile_view.default
+targetEntityType: paragraph
+bundle: profile_view
+mode: default
+content:
+  field_profile_view:
+    type: block_field
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

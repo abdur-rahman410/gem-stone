@@ -1,0 +1,167 @@
+uuid: 1d92cc0b-5903-413b-8389-ad831a5f9f43
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_social_icons
+    - node.type.page
+  module:
+    - social_media_links_field
+id: node.page.field_social_icons
+field_name: field_social_icons
+entity_type: node
+bundle: page
+label: 'social icons'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  iconset: 'fontawesome:2x'
+  platforms:
+    rss:
+      enabled: false
+      description: ''
+      weight: -10
+    email:
+      enabled: false
+      description: ''
+      weight: -9
+    whatsapp_channel:
+      enabled: false
+      description: ''
+      weight: -8
+    goodreads:
+      enabled: false
+      description: ''
+      weight: -7
+    googleplay:
+      enabled: false
+      description: ''
+      weight: -6
+    telegram:
+      enabled: false
+      description: ''
+      weight: -5
+    meetup:
+      enabled: false
+      description: ''
+      weight: -4
+    youtube_channel:
+      enabled: false
+      description: ''
+      weight: -3
+    website:
+      enabled: false
+      description: ''
+      weight: -2
+    instagram:
+      enabled: false
+      description: ''
+      weight: -1
+    mastodon:
+      enabled: false
+      description: ''
+      weight: 0
+    vimeo:
+      enabled: false
+      description: ''
+      weight: 1
+    github:
+      enabled: false
+      description: ''
+      weight: 2
+    gitlab:
+      enabled: false
+      description: ''
+      weight: 3
+    bitbucket:
+      enabled: false
+      description: ''
+      weight: 4
+    drupal:
+      enabled: false
+      description: ''
+      weight: 5
+    tumblr:
+      enabled: false
+      description: ''
+      weight: 6
+    yandex_zen:
+      enabled: false
+      description: ''
+      weight: 7
+    contact:
+      enabled: false
+      description: ''
+      weight: 8
+    behance:
+      enabled: false
+      description: ''
+      weight: 9
+    flickr:
+      enabled: false
+      description: ''
+      weight: 10
+    tiktok:
+      enabled: false
+      description: ''
+      weight: 11
+    glassdoor:
+      enabled: false
+      description: ''
+      weight: 12
+    soundcloud:
+      enabled: false
+      description: ''
+      weight: 13
+    linkedin:
+      enabled: false
+      description: ''
+      weight: 14
+    twitter:
+      enabled: false
+      description: ''
+      weight: 15
+    patreon:
+      enabled: false
+      description: ''
+      weight: 16
+    xing:
+      enabled: false
+      description: ''
+      weight: 17
+    youtube:
+      enabled: false
+      description: ''
+      weight: 18
+    pinterest:
+      enabled: false
+      description: ''
+      weight: 19
+    whatsapp:
+      enabled: false
+      description: ''
+      weight: 20
+    vkontakte:
+      enabled: false
+      description: ''
+      weight: 21
+    facebook:
+      enabled: false
+      description: ''
+      weight: 22
+    amazon:
+      enabled: false
+      description: ''
+      weight: 23
+    googleplus:
+      enabled: false
+      description: ''
+      weight: 24
+    slideshare:
+      enabled: false
+      description: ''
+      weight: 25
+field_type: social_media_links_field

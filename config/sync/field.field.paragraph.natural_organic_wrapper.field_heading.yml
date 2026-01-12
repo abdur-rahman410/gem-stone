@@ -1,0 +1,19 @@
+uuid: 80e76f3d-8a70-4d25-8752-fcbd8081ce61
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_heading
+    - paragraphs.paragraphs_type.natural_organic_wrapper
+id: paragraph.natural_organic_wrapper.field_heading
+field_name: field_heading
+entity_type: paragraph
+bundle: natural_organic_wrapper
+label: Heading
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

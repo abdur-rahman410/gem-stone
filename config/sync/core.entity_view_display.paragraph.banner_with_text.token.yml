@@ -1,0 +1,33 @@
+uuid: 7e0ca725-6171-4595-a419-9d972e32ca76
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.token
+    - field.field.paragraph.banner_with_text.field_banner_heading
+    - field.field.paragraph.banner_with_text.field_hero_image
+    - paragraphs.paragraphs_type.banner_with_text
+  module:
+    - text
+id: paragraph.banner_with_text.token
+targetEntityType: paragraph
+bundle: banner_with_text
+mode: token
+content:
+  field_banner_heading:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_hero_image:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden: {  }

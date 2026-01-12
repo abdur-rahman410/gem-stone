@@ -1,0 +1,24 @@
+uuid: ae35cbed-048d-4264-8a0a-7aacd512e1c6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_banner_heading
+    - filter.format.full_html
+    - paragraphs.paragraphs_type.natural_organic
+  module:
+    - text
+id: paragraph.natural_organic.field_banner_heading
+field_name: field_banner_heading
+entity_type: paragraph
+bundle: natural_organic
+label: 'Organic Detail'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - full_html
+field_type: text_long

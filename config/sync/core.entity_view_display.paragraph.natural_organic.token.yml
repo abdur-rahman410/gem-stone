@@ -1,0 +1,25 @@
+uuid: 85610363-fe84-48fe-b78b-b3a112c248de
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.token
+    - field.field.paragraph.natural_organic.field_banner_heading
+    - field.field.paragraph.natural_organic.field_hero_image
+    - paragraphs.paragraphs_type.natural_organic
+  module:
+    - text
+id: paragraph.natural_organic.token
+targetEntityType: paragraph
+bundle: natural_organic
+mode: token
+content:
+  field_banner_heading:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_hero_image: true

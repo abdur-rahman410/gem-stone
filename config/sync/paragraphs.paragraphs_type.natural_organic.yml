@@ -1,0 +1,10 @@
+uuid: 9ad1819f-7ebc-4972-98dc-dbf1c295a075
+langcode: en
+status: true
+dependencies: {  }
+id: natural_organic
+label: 'Natural Organic '
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

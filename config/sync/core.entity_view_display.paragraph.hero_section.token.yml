@@ -1,0 +1,51 @@
+uuid: 62b851bb-3d00-425b-96c4-c17d7ca159f9
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.token
+    - field.field.paragraph.hero_section.field_banner_heading
+    - field.field.paragraph.hero_section.field_hero_button
+    - field.field.paragraph.hero_section.field_hero_image
+    - field.field.paragraph.hero_section.field_link_to_whatsapp
+    - field.field.paragraph.hero_section.field_styles
+    - paragraphs.paragraphs_type.hero_section
+  module:
+    - link
+    - text
+id: paragraph.hero_section.token
+targetEntityType: paragraph
+bundle: hero_section
+mode: token
+content:
+  field_banner_heading:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_hero_button:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_hero_image:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  field_link_to_whatsapp: true
+  field_styles: true

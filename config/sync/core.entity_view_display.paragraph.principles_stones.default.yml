@@ -1,0 +1,32 @@
+uuid: 5f64819b-9e0f-4072-886c-f58b33681c6d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.principles_stones.field_principles_heading
+    - field.field.paragraph.principles_stones.field_principles_stones
+    - paragraphs.paragraphs_type.principles_stones
+  module:
+    - entity_reference_revisions
+id: paragraph.principles_stones.default
+targetEntityType: paragraph
+bundle: principles_stones
+mode: default
+content:
+  field_principles_heading:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_principles_stones:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

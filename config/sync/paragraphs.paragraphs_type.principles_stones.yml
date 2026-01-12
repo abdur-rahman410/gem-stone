@@ -1,0 +1,10 @@
+uuid: f2e4d0f2-1e6e-4f78-939a-be5d67e666ae
+langcode: en
+status: true
+dependencies: {  }
+id: principles_stones
+label: 'Principles Stones'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

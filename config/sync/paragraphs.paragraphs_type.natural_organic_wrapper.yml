@@ -1,0 +1,10 @@
+uuid: 0b1c30fd-99cf-4c78-949d-e8db7ae013ad
+langcode: en
+status: true
+dependencies: {  }
+id: natural_organic_wrapper
+label: 'Natural Organic Wrapper'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

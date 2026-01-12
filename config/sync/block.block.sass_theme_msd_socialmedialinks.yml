@@ -1,0 +1,177 @@
+uuid: 3ab91904-2246-41a2-a240-3699db241962
+langcode: en
+status: true
+dependencies:
+  module:
+    - social_media_links
+  theme:
+    - sass_theme_msd
+id: sass_theme_msd_socialmedialinks
+theme: sass_theme_msd
+region: footer_fourth
+weight: 0
+provider: null
+plugin: social_media_links_block
+settings:
+  id: social_media_links_block
+  label: 'Social Media Links'
+  label_display: '0'
+  provider: social_media_links
+  platforms:
+    facebook:
+      value: '#'
+      description: ''
+      weight: '-51'
+    whatsapp:
+      value: '#'
+      description: ''
+      weight: '-50'
+    youtube:
+      value: '#'
+      description: ''
+      weight: '-49'
+    twitter:
+      value: '#'
+      description: ''
+      weight: '-48'
+    rss:
+      value: ''
+      description: ''
+      weight: -10
+    email:
+      value: ''
+      description: ''
+      weight: '-46'
+    whatsapp_channel:
+      value: ''
+      description: ''
+      weight: '-45'
+    goodreads:
+      value: ''
+      description: ''
+      weight: '-44'
+    googleplay:
+      value: ''
+      description: ''
+      weight: '-43'
+    telegram:
+      value: ''
+      description: ''
+      weight: '-42'
+    meetup:
+      value: ''
+      description: ''
+      weight: '-41'
+    youtube_channel:
+      value: ''
+      description: ''
+      weight: '-40'
+    website:
+      value: ''
+      description: ''
+      weight: '-39'
+    instagram:
+      value: ''
+      description: ''
+      weight: '-38'
+    mastodon:
+      value: ''
+      description: ''
+      weight: '-37'
+    vimeo:
+      value: ''
+      description: ''
+      weight: '-36'
+    github:
+      value: ''
+      description: ''
+      weight: '-35'
+    gitlab:
+      value: ''
+      description: ''
+      weight: '-34'
+    bitbucket:
+      value: ''
+      description: ''
+      weight: '-33'
+    drupal:
+      value: ''
+      description: ''
+      weight: '-32'
+    tumblr:
+      value: ''
+      description: ''
+      weight: '-31'
+    yandex_zen:
+      value: ''
+      description: ''
+      weight: '-30'
+    contact:
+      value: ''
+      description: ''
+      weight: '-29'
+    behance:
+      value: ''
+      description: ''
+      weight: '-28'
+    flickr:
+      value: ''
+      description: ''
+      weight: '-27'
+    tiktok:
+      value: ''
+      description: ''
+      weight: '-26'
+    glassdoor:
+      value: ''
+      description: ''
+      weight: '-25'
+    soundcloud:
+      value: ''
+      description: ''
+      weight: '-24'
+    linkedin:
+      value: ''
+      description: ''
+      weight: '-23'
+    patreon:
+      value: ''
+      description: ''
+      weight: '-22'
+    xing:
+      value: ''
+      description: ''
+      weight: '-21'
+    pinterest:
+      value: ''
+      description: ''
+      weight: '-20'
+    vkontakte:
+      value: ''
+      description: ''
+      weight: '-19'
+    amazon:
+      value: ''
+      description: ''
+      weight: '-18'
+    googleplus:
+      value: ''
+      description: ''
+      weight: '-17'
+    slideshare:
+      value: ''
+      description: ''
+      weight: '-16'
+  appearance:
+    orientation: h
+    show_name: 0
+    suggestion: ''
+  link_attributes:
+    target: '<none>'
+    rel: '<none>'
+  iconset:
+    style: 'fontawesome:2x'
+    installed_iconsets:
+      fontawesome:
+        examples: ''
+visibility: {  }

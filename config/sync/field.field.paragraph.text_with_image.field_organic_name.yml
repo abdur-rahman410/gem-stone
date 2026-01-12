@@ -1,0 +1,19 @@
+uuid: c10e588f-84a1-4b03-a4e1-b53428271362
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_organic_name
+    - paragraphs.paragraphs_type.text_with_image
+id: paragraph.text_with_image.field_organic_name
+field_name: field_organic_name
+entity_type: paragraph
+bundle: text_with_image
+label: Designation
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

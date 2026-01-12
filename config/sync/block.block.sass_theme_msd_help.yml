@@ -1,0 +1,22 @@
+uuid: 8f83d264-c19e-419b-8f2e-f3b79984a203
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - sass_theme_msd
+_core:
+  default_config_hash: VfPFqqxfkomud5CO8DUijw85QIl9GIxh_nIxLOYESxg
+id: sass_theme_msd_help
+theme: sass_theme_msd
+region: compy_reg
+weight: 0
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

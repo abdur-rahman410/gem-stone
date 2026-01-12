@@ -1,0 +1,23 @@
+uuid: 1ec35274-0412-407b-a259-cd2a8238169d
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:d407b55c-9b41-4a67-8a2c-abdf226ebfe7'
+  module:
+    - block_content
+  theme:
+    - sass_theme_msd
+id: sass_theme_msd_address
+theme: sass_theme_msd
+region: footer_third
+weight: 0
+provider: null
+plugin: 'block_content:d407b55c-9b41-4a67-8a2c-abdf226ebfe7'
+settings:
+  id: 'block_content:d407b55c-9b41-4a67-8a2c-abdf226ebfe7'
+  label: Address
+  label_display: visible
+  provider: block_content
+  view_mode: full
+visibility: {  }
