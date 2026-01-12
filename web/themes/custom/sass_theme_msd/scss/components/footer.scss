@@ -4,7 +4,7 @@
     .footer-main-wrapper {
         display: flex;
         justify-content: space-between;
-        padding-block: $space-45;
+        padding-block: $space-110 $space-45;
         flex-direction: column;
 
         @include tablet {
@@ -34,6 +34,7 @@
 
             h5 {
                 padding-bottom: $space-12;
+                color: $primary;
             }
 
             .menu-items {
@@ -60,6 +61,7 @@
 
             h5 {
                 padding-bottom: $space-12;
+                color: $primary;
             }
 
             h6 {
