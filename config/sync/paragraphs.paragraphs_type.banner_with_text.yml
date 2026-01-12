@@ -1,0 +1,10 @@
+uuid: a575534d-c63e-4a1e-99a9-c2adc5e3d092
+langcode: en
+status: true
+dependencies: {  }
+id: banner_with_text
+label: 'Banner With Text'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

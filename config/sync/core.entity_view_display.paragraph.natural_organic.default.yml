@@ -1,0 +1,32 @@
+uuid: dc1432c4-3884-42bc-9907-ce25fd681ad2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.natural_organic.field_banner_heading
+    - field.field.paragraph.natural_organic.field_hero_image
+    - paragraphs.paragraphs_type.natural_organic
+  module:
+    - text
+id: paragraph.natural_organic.default
+targetEntityType: paragraph
+bundle: natural_organic
+mode: default
+content:
+  field_banner_heading:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_hero_image:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+hidden: {  }

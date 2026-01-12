@@ -1,0 +1,26 @@
+uuid: 42218273-fde6-48f4-8a13-1e6620dd3deb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.profile_view.field_profile_view
+    - paragraphs.paragraphs_type.profile_view
+  module:
+    - block_field
+id: paragraph.profile_view.default
+targetEntityType: paragraph
+bundle: profile_view
+mode: default
+content:
+  field_profile_view:
+    type: block_field_default
+    weight: 0
+    region: content
+    settings:
+      plugin_id: ''
+      settings: {  }
+      configuration_form: full
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

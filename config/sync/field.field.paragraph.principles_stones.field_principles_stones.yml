@@ -1,0 +1,49 @@
+uuid: b75bae72-7afd-462a-a337-1e8a3ffb49ba
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_principles_stones
+    - paragraphs.paragraphs_type.natural_organic
+    - paragraphs.paragraphs_type.principles_stones
+  module:
+    - entity_reference_revisions
+id: paragraph.principles_stones.field_principles_stones
+field_name: field_principles_stones
+entity_type: paragraph
+bundle: principles_stones
+label: 'Principles Stones '
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      natural_organic: natural_organic
+    negate: 0
+    target_bundles_drag_drop:
+      banner_with_text:
+        weight: 8
+        enabled: false
+      hero_section:
+        weight: 9
+        enabled: false
+      natural_organic:
+        weight: 10
+        enabled: true
+      natural_organic_wrapper:
+        weight: 11
+        enabled: false
+      principles_stones:
+        weight: 12
+        enabled: false
+      profile_view:
+        weight: 13
+        enabled: false
+      text_with_image:
+        weight: 14
+        enabled: false
+field_type: entity_reference_revisions

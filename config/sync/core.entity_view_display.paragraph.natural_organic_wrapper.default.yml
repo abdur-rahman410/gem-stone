@@ -1,0 +1,33 @@
+uuid: c9f46c8e-2346-4d8f-acc2-80df6037b088
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.natural_organic_wrapper.field_heading
+    - field.field.paragraph.natural_organic_wrapper.field_ref_para
+    - paragraphs.paragraphs_type.natural_organic_wrapper
+  module:
+    - entity_reference_revisions
+id: paragraph.natural_organic_wrapper.default
+targetEntityType: paragraph
+bundle: natural_organic_wrapper
+mode: default
+content:
+  field_heading:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_ref_para:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

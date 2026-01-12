@@ -1,0 +1,25 @@
+uuid: fe882fc1-7fe9-4799-bbc1-93f2b9ae040c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_profile_view
+    - paragraphs.paragraphs_type.profile_view
+  module:
+    - block_field
+id: paragraph.profile_view.field_profile_view
+field_name: field_profile_view
+entity_type: paragraph
+bundle: profile_view
+label: 'Profile View'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  selection: blocks
+  selection_settings:
+    plugin_ids:
+      'views_block:profile_info-block_1': 'views_block:profile_info-block_1'
+field_type: block_field
