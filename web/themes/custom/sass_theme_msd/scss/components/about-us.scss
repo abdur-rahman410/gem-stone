@@ -1,0 +1,149 @@
+.banner-wrapper {
+    margin-block: 100px;
+    position: relative;
+
+    .image-wrapper {
+
+
+        img {
+            width: 100%;
+            height: 241px;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            opacity: 0.8;
+            background-color: var(--color-3, $tertiary);
+        }
+    }
+
+    .banner-text {
+        @extend .container;
+        position: absolute;
+        top: 20%;
+        left: 0;
+        width: 70%;
+
+        h1 {
+            color: $primary;
+        }
+    }
+}
+
+
+//text with image//
+.text-image-wrapper {
+    @extend .container-2;
+    display: flex;
+    gap: $space-20;
+
+    .left-content {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .image-wrapper {
+            img {
+                width: 100%;
+                height: 362px;
+                object-fit: cover;
+                border-radius: $space-20;
+            }
+        }
+
+        .profile-name {
+            @extend .h6;
+            color: $primary;
+            padding-block: $space-12 $space-4;
+        }
+
+        .designation {
+            @extend .body3;
+            color: $black;
+        }
+    }
+
+    .right-content {
+        width: 60%;
+        padding-block: $space-30;
+
+        h3 {
+            color: $primary;
+        }
+
+        p {
+            @extend .body2;
+            color: $dark-gray;
+
+        }
+
+        .line {
+            width: 100%;
+            height: 2px;
+            background-color: $tertiary;
+            margin-block: $space-32;
+        }
+    }
+}
+
+
+//principles stones//
+.principle-stones-wrapper {
+    padding-block: $space-110;
+
+    .heading {
+        background-color: $tertiary;
+        padding-block: $space-26;
+
+        h2 {
+            @extend .container-2;
+            color: $primary;
+            text-align: center;
+        }
+    }
+
+    .principle-stone {
+        @extend .container;
+        @extend .grid;
+        padding-block: $space-70;
+
+        .paragraph--type--natural-organic {
+            grid-column: span 4;
+            display: flex;
+            gap: $space-10;
+            padding-bottom: $space-52;
+
+            .organic-image {
+                width: 25px;
+                height: 25px;
+                background-color: $tertiary;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                padding: $space-25;
+
+                img {
+                    width: 25px;
+                    height: 25px;
+                }
+            }
+
+            .organic-name {
+                h5 {
+                    color: $black;
+                    padding-bottom: $space-18;
+                }
+
+                p {
+                    @extend .body2;
+                    color: $black;
+                }
+            }
+
+        }
+    }
+}

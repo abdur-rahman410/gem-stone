@@ -118,7 +118,7 @@ h5 {
   }
 }
 
-.h6, .site-footer .footer-main-wrapper .region--footer-second .menu-items li a, .logo-with-menu .region--header-top #block-sass-theme-msd-mainnavigation .sf-menu > li ul li a, .logo-with-menu .region--header-top #block-sass-theme-msd-mainnavigation .sf-menu > li > a, .secondary, .primary, .style_2 .hero-section-wrapper .hero-section .hero-body .button-wrapper .explore-btn a, .style_1 .hero-section-wrapper .hero-section .hero-body .button-wrapper .whatsapp-btn a, .style_1 .hero-section-wrapper .hero-section .hero-body .button-wrapper .explore-btn a,
+.h6, .site-footer .footer-main-wrapper .region--footer-second .menu-items li a, .text-image-wrapper .left-content .profile-name, .logo-with-menu .region--header-top #block-sass-theme-msd-mainnavigation .sf-menu > li ul li a, .logo-with-menu .region--header-top #block-sass-theme-msd-mainnavigation .sf-menu > li > a, .secondary, .primary, .style_2 .hero-section-wrapper .hero-section .hero-body .button-wrapper .explore-btn a, .style_1 .hero-section-wrapper .hero-section .hero-body .button-wrapper .whatsapp-btn a, .style_1 .hero-section-wrapper .hero-section .hero-body .button-wrapper .explore-btn a,
 h6 {
   font-family: "Inter", sans-serif;
   font-size: 16px;
@@ -127,13 +127,13 @@ h6 {
   line-height: 22px;
 }
 @media (min-width: 768px) {
-  .h6, .site-footer .footer-main-wrapper .region--footer-second .menu-items li a, .logo-with-menu .region--header-top #block-sass-theme-msd-mainnavigation .sf-menu > li ul li a, .logo-with-menu .region--header-top #block-sass-theme-msd-mainnavigation .sf-menu > li > a, .secondary, .primary, .style_2 .hero-section-wrapper .hero-section .hero-body .button-wrapper .explore-btn a, .style_1 .hero-section-wrapper .hero-section .hero-body .button-wrapper .whatsapp-btn a, .style_1 .hero-section-wrapper .hero-section .hero-body .button-wrapper .explore-btn a,
+  .h6, .site-footer .footer-main-wrapper .region--footer-second .menu-items li a, .text-image-wrapper .left-content .profile-name, .logo-with-menu .region--header-top #block-sass-theme-msd-mainnavigation .sf-menu > li ul li a, .logo-with-menu .region--header-top #block-sass-theme-msd-mainnavigation .sf-menu > li > a, .secondary, .primary, .style_2 .hero-section-wrapper .hero-section .hero-body .button-wrapper .explore-btn a, .style_1 .hero-section-wrapper .hero-section .hero-body .button-wrapper .whatsapp-btn a, .style_1 .hero-section-wrapper .hero-section .hero-body .button-wrapper .explore-btn a,
   h6 {
     line-height: 24px;
   }
 }
 @media (min-width: 1280px) {
-  .h6, .site-footer .footer-main-wrapper .region--footer-second .menu-items li a, .logo-with-menu .region--header-top #block-sass-theme-msd-mainnavigation .sf-menu > li ul li a, .logo-with-menu .region--header-top #block-sass-theme-msd-mainnavigation .sf-menu > li > a, .secondary, .primary, .style_2 .hero-section-wrapper .hero-section .hero-body .button-wrapper .explore-btn a, .style_1 .hero-section-wrapper .hero-section .hero-body .button-wrapper .whatsapp-btn a, .style_1 .hero-section-wrapper .hero-section .hero-body .button-wrapper .explore-btn a,
+  .h6, .site-footer .footer-main-wrapper .region--footer-second .menu-items li a, .text-image-wrapper .left-content .profile-name, .logo-with-menu .region--header-top #block-sass-theme-msd-mainnavigation .sf-menu > li ul li a, .logo-with-menu .region--header-top #block-sass-theme-msd-mainnavigation .sf-menu > li > a, .secondary, .primary, .style_2 .hero-section-wrapper .hero-section .hero-body .button-wrapper .explore-btn a, .style_1 .hero-section-wrapper .hero-section .hero-body .button-wrapper .whatsapp-btn a, .style_1 .hero-section-wrapper .hero-section .hero-body .button-wrapper .explore-btn a,
   h6 {
     font-size: 18px;
     line-height: 26px;
@@ -159,7 +159,7 @@ h6 {
   }
 }
 
-.body2, .profile-view .profile-main-wrapper .profile-info .profile-description, .profile-view header p {
+.body2, .principle-stones-wrapper .principle-stone .paragraph--type--natural-organic .organic-name p, .text-image-wrapper .right-content p, .profile-view .profile-main-wrapper .profile-info .profile-description, .profile-view header p {
   font-family: "Inter", sans-serif;
   font-size: 14px;
   font-style: normal;
@@ -167,18 +167,18 @@ h6 {
   line-height: 20px;
 }
 @media (min-width: 768px) {
-  .body2, .profile-view .profile-main-wrapper .profile-info .profile-description, .profile-view header p {
+  .body2, .principle-stones-wrapper .principle-stone .paragraph--type--natural-organic .organic-name p, .text-image-wrapper .right-content p, .profile-view .profile-main-wrapper .profile-info .profile-description, .profile-view header p {
     line-height: 22px;
   }
 }
 @media (min-width: 1280px) {
-  .body2, .profile-view .profile-main-wrapper .profile-info .profile-description, .profile-view header p {
+  .body2, .principle-stones-wrapper .principle-stone .paragraph--type--natural-organic .organic-name p, .text-image-wrapper .right-content p, .profile-view .profile-main-wrapper .profile-info .profile-description, .profile-view header p {
     font-size: 16px;
     line-height: 24px;
   }
 }
 
-.body3, .copy-right p {
+.body3, .copy-right p, .text-image-wrapper .left-content .designation {
   font-family: "Inter", sans-serif;
   font-size: 12px;
   font-style: normal;
@@ -186,13 +186,13 @@ h6 {
   line-height: 18px;
 }
 @media (min-width: 768px) {
-  .body3, .copy-right p {
+  .body3, .copy-right p, .text-image-wrapper .left-content .designation {
     font-size: 13px;
     line-height: 20px;
   }
 }
 @media (min-width: 1280px) {
-  .body3, .copy-right p {
+  .body3, .copy-right p, .text-image-wrapper .left-content .designation {
     font-size: 14px;
   }
 }
@@ -236,18 +236,35 @@ h6 {
   src: url(../fonts/Inter_18pt-Bold.ttf);
   font-weight: 700;
 }
-.container, .site-footer, .logo-with-menu .region--header-top, .style_2 .hero-section-wrapper .hero-section, .profile-view .slick-dots, .profile-view header, .organic-main-wrapper, .style_1 .hero-section-wrapper .hero-section {
+.container, .site-footer, .principle-stones-wrapper .principle-stone, .banner-wrapper .banner-text, .logo-with-menu .region--header-top, .style_2 .hero-section-wrapper .hero-section, .profile-view .slick-dots, .profile-view header, .organic-main-wrapper, .style_1 .hero-section-wrapper .hero-section {
   padding-inline: 25px !important;
   margin-inline: auto;
 }
 @media (min-width: 768px) {
-  .container, .site-footer, .logo-with-menu .region--header-top, .style_2 .hero-section-wrapper .hero-section, .profile-view .slick-dots, .profile-view header, .organic-main-wrapper, .style_1 .hero-section-wrapper .hero-section {
+  .container, .site-footer, .principle-stones-wrapper .principle-stone, .banner-wrapper .banner-text, .logo-with-menu .region--header-top, .style_2 .hero-section-wrapper .hero-section, .profile-view .slick-dots, .profile-view header, .organic-main-wrapper, .style_1 .hero-section-wrapper .hero-section {
     padding-inline: 60px !important;
   }
 }
 @media (min-width: 1280px) {
-  .container, .site-footer, .logo-with-menu .region--header-top, .style_2 .hero-section-wrapper .hero-section, .profile-view .slick-dots, .profile-view header, .organic-main-wrapper, .style_1 .hero-section-wrapper .hero-section {
+  .container, .site-footer, .principle-stones-wrapper .principle-stone, .banner-wrapper .banner-text, .logo-with-menu .region--header-top, .style_2 .hero-section-wrapper .hero-section, .profile-view .slick-dots, .profile-view header, .organic-main-wrapper, .style_1 .hero-section-wrapper .hero-section {
     padding-inline: 80px !important;
+    margin-inline: auto !important;
+    max-width: 1440px;
+  }
+}
+
+.container-2, .principle-stones-wrapper .heading h2, .text-image-wrapper {
+  padding-inline: 25px !important;
+  margin-inline: auto;
+}
+@media (min-width: 768px) {
+  .container-2, .principle-stones-wrapper .heading h2, .text-image-wrapper {
+    padding-inline: 60px !important;
+  }
+}
+@media (min-width: 1280px) {
+  .container-2, .principle-stones-wrapper .heading h2, .text-image-wrapper {
+    padding-inline: 180px !important;
     margin-inline: auto !important;
     max-width: 1440px;
   }
@@ -379,19 +396,19 @@ h6 {
   font-size: 1.5rem;
 }
 
-.grid {
+.grid, .principle-stones-wrapper .principle-stone {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   column-gap: 20px;
   row-gap: 20px;
 }
 @media (min-width: 768px) {
-  .grid {
+  .grid, .principle-stones-wrapper .principle-stone {
     grid-template-columns: repeat(8, 1fr);
   }
 }
 @media (min-width: 1280px) {
-  .grid {
+  .grid, .principle-stones-wrapper .principle-stone {
     grid-template-columns: repeat(12, 1fr);
   }
 }
@@ -851,6 +868,113 @@ body {
 .logo-with-menu .region--header-top #block-sass-theme-msd-mainnavigation .sf-accordion-toggle a span {
   color: #fff;
   font-size: 45px;
+}
+
+.banner-wrapper {
+  margin-block: 100px;
+  position: relative;
+}
+.banner-wrapper .image-wrapper img {
+  width: 100%;
+  height: 241px;
+}
+.banner-wrapper .image-wrapper::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  opacity: 0.8;
+  background-color: var(--color-3, #EBE4D7);
+}
+.banner-wrapper .banner-text {
+  position: absolute;
+  top: 20%;
+  left: 0;
+  width: 70%;
+}
+.banner-wrapper .banner-text h1 {
+  color: #6B5423;
+}
+
+.text-image-wrapper {
+  display: flex;
+  gap: 20px;
+}
+.text-image-wrapper .left-content {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.text-image-wrapper .left-content .image-wrapper img {
+  width: 100%;
+  height: 362px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.text-image-wrapper .left-content .profile-name {
+  color: #6B5423;
+  padding-block: 12px 4px;
+}
+.text-image-wrapper .left-content .designation {
+  color: #000;
+}
+.text-image-wrapper .right-content {
+  width: 60%;
+  padding-block: 30px;
+}
+.text-image-wrapper .right-content h3 {
+  color: #6B5423;
+}
+.text-image-wrapper .right-content p {
+  color: #343434;
+}
+.text-image-wrapper .right-content .line {
+  width: 100%;
+  height: 2px;
+  background-color: #EBE4D7;
+  margin-block: 32px;
+}
+
+.principle-stones-wrapper {
+  padding-block: 110px;
+}
+.principle-stones-wrapper .heading {
+  background-color: #EBE4D7;
+  padding-block: 26px;
+}
+.principle-stones-wrapper .heading h2 {
+  color: #6B5423;
+  text-align: center;
+}
+.principle-stones-wrapper .principle-stone {
+  padding-block: 70px;
+}
+.principle-stones-wrapper .principle-stone .paragraph--type--natural-organic {
+  grid-column: span 4;
+  display: flex;
+  gap: 10px;
+  padding-bottom: 52px;
+}
+.principle-stones-wrapper .principle-stone .paragraph--type--natural-organic .organic-image {
+  width: 25px;
+  height: 25px;
+  background-color: #EBE4D7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  padding: 25px;
+}
+.principle-stones-wrapper .principle-stone .paragraph--type--natural-organic .organic-image img {
+  width: 25px;
+  height: 25px;
+}
+.principle-stones-wrapper .principle-stone .paragraph--type--natural-organic .organic-name h5 {
+  color: #000;
+  padding-bottom: 18px;
+}
+.principle-stones-wrapper .principle-stone .paragraph--type--natural-organic .organic-name p {
+  color: #000;
 }
 
 .site-footer .footer-main-wrapper {

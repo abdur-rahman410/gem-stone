@@ -49,11 +49,13 @@ not paragraph.isPublished() ? 'paragraph--unpublished'
 {% block paragraph %}
 <div{{ attributes.addClass(classes) }}>
   {% block content %}
-  <div class="organic-image">
-    {{ content.field_hero_image }}
-  </div>
-  <div class="organic-name">
-    {{ content.field_banner_heading }}
+  <div class="banner-wrapper">
+    <div class="image-wrapper">
+      {{ content.field_hero_image }}
+    </div>
+    <div class="banner-text">
+      {{ content.field_banner_heading }}
+    </div>
   </div>
   {% endblock %}
   </div>
